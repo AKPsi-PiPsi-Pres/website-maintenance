@@ -5,7 +5,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: #282c34;
+  background-color: #121212;
 }
 
 .app-container {
@@ -141,4 +141,8 @@
 
 .gap {
   height: 40px;
+}
+
+.logo {
+  margin-bottom: 5rem;
 }

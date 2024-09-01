@@ -2,6 +2,8 @@ import './App.css';
 import builderImage from './builder.png'; // Make sure to place your builder image in the src folder or adjust the path accordingly.
 import { useEffect, useState } from 'react';
 import { FaFacebook, FaInstagram  } from 'react-icons/fa';
+import logo from "./akpsiFullLogo.png"
+
 function App() {
   const [dots, setDots] = useState('');
 
@@ -15,7 +17,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div className="construction-animation">
+      <img src={logo} className="logo" alt="Alpha Kappa Psi Logo" />
+      <div className="construction-animation">
           <img src={builderImage} className="builder-image" alt="builder" />
           <div className="message-container">
             <h1 className="maintenance-message">We're Working on Something Awesome{dots}</h1>
@@ -24,7 +27,7 @@ function App() {
         </div>
       </header>
       <body>
-          <h1 className="body-header">Contact Us</h1>
+
           <div className="contact-container">
             <p className="contact-info">
               Follow us on social media or reach out via email:
